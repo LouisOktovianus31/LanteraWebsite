@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lantera – Caregiving Made Easier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Optional: Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-left">
+          <!-- LOGO PLACEHOLDER -->
+          <div class="logo-placeholder">
+            <img src="Logo Lantera.png" alt="Lantera Logo">
+          </div>
+          <span class="nav-title">Lantera</span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+          <a href="#download" class="nav-cta">Get the App</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="anim-fade-up" style="animation-delay: .05s;">
+          <div class="hero-tag">
+            <span>Health Trends & Insights powered by Apple Intelligence</span>
+          </div>
+          <h1 class="hero-title">
+            Caregiving made clearer with meaningful health insights.
+          </h1>
+          <p class="hero-subtitle">
+            Transform simple blood pressure and sugar logs into meaningful trends and insights for better daily decisions.
+          </p>
+
+          <div class="hero-cta-row anim-fade-up" style="animation-delay: .25s;">
+            <button class="btn-primary" onclick="scrollToSection('download')">
+              Get Started
+            </button>
+            <button class="btn-ghost" onclick="scrollToSection('intro-video')">
+              What is Lantera?
+            </button>
+          </div>
+
+          <p class="hero-note anim-fade-up" style="animation-delay: .35s;">
+            Built for family caregivers managing blood pressure and blood sugar every day.
+          </p>
+        </div>
+
+        <div class="hero-phone-mock anim-fade-up" style="animation-delay: .2s;">
+          <div class="phone-frame">
+            <div class="phone-screens">
+                <img src="Picture/HeroPage.png" alt="Lantera App Overview" class="hero-phone-img">
+            </div>
+          </div>
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>Health insights updated every day.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Lantera -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="two-column">
+        <div class="anim-fade-up">
+          <h2 class="section-title">Lantera: your smart companion for family caregiving</h2>
+          <p>
+            Lantera helps families monitor blood pressure and blood sugar more clearly with meaningful trends, simple summaries, and easy-to-use tools. 
+            Instead of manually checking numbers every day, caregivers get clear insights that show what’s improving, what needs attention, and what might affect the next decision.
+          </p>
+          <p style="margin-top: 0.8rem;">
+            With automatic summaries, voice-based logging, and daily trend highlights, Lantera makes caregiving easier, more organized, and more confident for families managing chronic conditions.
+          </p>
+
+          <div class="pill-list">
+            <div class="pill-item">
+              <span class="pill-dot"></span>
+              <span>Clear, meaningful health insights</span>
+            </div>
+            <div class="pill-item">
+              <span class="pill-dot"></span>
+              <span>Smart summaries that help caregivers respond better</span>
+            </div>
+            <div class="pill-item">
+              <span class="pill-dot"></span>
+              <span>Designed for family caregivers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-card-full anim-fade-up" style="animation-delay:.15s;">
+            <img src="WhatIsLantera.png"
+                alt="Lantera Overview"
+                class="feature-image-full">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro Video -->
+  <section class="section" id="intro-video">
+    <div class="container">
+      <div class="section-header anim-fade-up">
+        <h2 class="section-title">Introducing Lantera</h2>
+        <p class="section-subtitle">
+          Learn what Lantera is, why we built it, and how it aims to empower caregivers through clarity and compassion.
+        </p>
+      </div>
+
+      <div class="video-wrapper anim-fade-up" style="animation-delay:.1s;">
+        <div class="video-inner-placeholder">
+            <iframe 
+                src="https://www.youtube.com/embed/71DzmPUtg_M?si=ZtVLyyYnzbM8KMT4"
+                title="Lantera Introduction Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header anim-fade-up">
+        <h2 class="section-title">Key features for caregivers</h2>
+        <p class="section-subtitle">
+          Turn daily health routines into clear insights with tools built to help caregivers stay informed and confident.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card anim-fade-up">
+          <div class="feature-icon">📈</div>
+          <h3 class="feature-title">Smart Trends and Insights</h3>
+          <p class="feature-text">
+            Lantera helps reveal patterns in daily blood pressure and sugar levels, making small changes easier to understand and respond to.
+          </p>
+          <img src="Picture/SmartTrendsandInsights.png" class="feature-img" alt="Smart Trends and Insights Screenshot">
+        </div>
+
+        <div class="feature-card anim-fade-up" style="animation-delay:.08s;">
+          <div class="feature-icon">📝</div>
+          <h3 class="feature-title">MCU Analysis</h3>
+          <p class="feature-text">
+            Upload MCU results and let Lantera summarize them automatically, giving families a clear, complete view of their health in one place.
+          </p>
+          <img src="Picture/MCU Analysis.png" class="feature-img" alt="MCU Analysis Screenshot">
+        </div>
+
+        <div class="feature-card anim-fade-up" style="animation-delay:.16s;">
+          <div class="feature-icon">🎙️</div>
+          <h3 class="feature-title">Voice-Based Logging</h3>
+          <p class="feature-text">
+            Simply speak your updates, and Lantera turns your voice into organized, easy-to-read health records.
+          </p>
+          <img src="Picture/Voice-Based Logging.png" class="feature-img" alt="Voice-Based Logging Screenshot">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Analytics -->
+  <section class="section">
+    <div class="container">
+      <div class="analytics-card anim-fade-up">
+        <div>
+          <h2 class="analytics-title">Share health updates in one simple PDF</h2>
+          <p class="analytics-text">
+            Turn Lantera’s daily logs into a clear, one-page PDF you can share with family members or doctors. 
+            Each summary highlights key trends, important events, and lab results so everyone stays on the same page.
+          </p>
+          <div class="analytics-badges">
+            <span class="analytics-badge">Ready-to-share visit summaries</span>
+            <span class="analytics-badge">Download or send via chat and email</span>
+            <span class="analytics-badge">Includes trends, notes, and alerts</span>
+          </div>
+        </div>
+        <div class="feature-image-wrapper">
+            <img src="SharePDF.png" alt="Share PDF Preview" class="feature-image-pdf">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Video -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header anim-fade-up">
+        <h2 class="section-title">Meet the team behind Lantera</h2>
+        <p class="section-subtitle">
+          "Behind Lantera is a team committed to building meaningful technology that empowers family caregivers and improves daily health monitoring."
+        </p>
+      </div>
+
+      <div class="video-wrapper anim-fade-up" style="animation-delay:.1s;">
+        <div class="team-video-container">
+            <video controls class="team-video">
+                <source src="Team Member.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Grid (6 people) -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <h2 class="section-title">The people who built Lantera</h2>
+      <p class="section-subtitle">
+        The team behind Lantera brings together passion, expertise, and a shared commitment
+        to making caregiving simpler and more meaningful.
+      </p>
+    </div>
+
+    <div class="team-grid">
+      <!-- Card 1 -->
+      <div class="team-card anim-fade-up" style="animation-delay: .05s;">
+        <div class="team-photo">
+          <img src="Team Member/Team 1.png" alt="Portrait of Louis Oktovianus">
+        </div>
+        <h3 class="team-name">Louis Oktovianus</h3>
+        <p class="team-role">Product Manager</p>
+
+        <div class="team-socials">
+          <a
+            href="https://www.instagram.com/louis_31_okr_04/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/louisoktovianus31/?skipRedirect=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="team-card anim-fade-up" style="animation-delay: .10s;">
+        <div class="team-photo">
+          <img src="Team Member/Team 2.png" alt="Portrait of Fatih Daffa Fawwaz">
+        </div>
+        <h3 class="team-name">Fatih Daffa Fawwaz</h3>
+        <p class="team-role">iOS Engineer</p>
+
+        <div class="team-socials">
+          <a
+            href="https://www.instagram.com/fatih.fawwaz07/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fatih-daffa-fawwaz-5a28a123b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="team-card anim-fade-up" style="animation-delay: .15s;">
+        <div class="team-photo">
+          <img src="Team Member/Team 3.png" alt="Portrait of Kelvin Alexander Bong">
+        </div>
+        <h3 class="team-name">Kelvin Alexander Bong</h3>
+        <p class="team-role">iOS Engineer</p>
+
+        <div class="team-socials">
+          <a
+            href="https://www.instagram.com/klvn_ab/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/kelvin-alexander-bong/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="team-card anim-fade-up" style="animation-delay: .20s;">
+        <div class="team-photo">
+          <img src="Team Member/Team 5.png" alt="Portrait of Michelle Pandojo Lukman">
+        </div>
+        <h3 class="team-name">Michelle Pandojo Lukman</h3>
+        <p class="team-role">UI/UX Designer</p>
+
+        <div class="team-socials">
+          <a
+            href="https://www.instagram.com/mchellepl/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/michelle-pandojo/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="team-card anim-fade-up" style="animation-delay: .25s;">
+        <div class="team-photo">
+          <img src="Team Member/Team 4.png" alt="Portrait of Jonathan Tjahjadi">
+        </div>
+        <h3 class="team-name">Jonathan Tjahjadi</h3>
+        <p class="team-role">UI/UX Designer</p>
+
+        <div class="team-socials">
+          <a
+            href="https://www.instagram.com/jnathantj/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jonathan-tjahjadi-960234250/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="team-card anim-fade-up" style="animation-delay: .30s;">
+        <div class="team-photo">
+          <img src="Team Member/Team 6.png" alt="Portrait of Yohanes Valentino Stanley">
+        </div>
+        <h3 class="team-name">Yohanes Valentino Stanley</h3>
+        <p class="team-role">UI/UX Designer</p>
+
+        <div class="team-socials">
+          <a
+            href="https://www.instagram.com/im.vlen/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yohanes-valentino-stanley-523923278/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="team-icon"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header anim-fade-up">
+        <h2 class="section-title">What caregivers say</h2>
+        <p class="section-subtitle">
+          Hear how Lantera helps families stay informed, organized, and confident in daily caregiving.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card anim-fade-up">
+          <p>
+            "Aplikasinya sangat berguna untuk merapikan catatan harian. 
+            Semoga ke depannya ada fitur tambahan lainnya agar semakin membantu keluarga yang merawat lansia.”
+          </p>
+          <div class="testimonial-meta">
+            <div>Mrs. Felicia</div>
+            <div class="testimonial-role">Family caregiver</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card anim-fade-up" style="animation-delay:.08s;">
+          <p>
+            “Inovasi Lantera memudahkan kami melihat riwayat kesehatan secara jelas.
+            Trackback-nya membantu sehingga komunikasi dengan dokter jadi lebih aman dan tepat.”
+          </p>
+          <div class="testimonial-meta">
+            <div>Ms. Susan Wijaya</div>
+            <div class="testimonial-role">Family caregiver</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card anim-fade-up" style="animation-delay:.16s;">
+          <p>
+            “Lantera sangat membantu banyak orang yang butuh memantau kesehatan setiap hari. 
+            Fitur ringkasannya benar-benar diperlukan dan memudahkan kami memahami kondisi keluarga.”
+          </p>
+          <div class="testimonial-meta">
+            <div>Mrs. Ruki</div>
+            <div class="testimonial-role">Family caregiver</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Download -->
+  <section class="section" id="download">
+    <div class="container">
+      <div class="cta-section anim-fade-up">
+        <h2 class="cta-title">Let's Light the Way to Easier Caregiving with Lantera</h2>
+        <p class="cta-text">
+          Caring for loved ones shouldn’t feel confusing or overwhelming.
+          Lantera helps you understand daily health trends with more clarity and confidence.
+        </p>
+
+        <p class="available-text">
+            Available on 
+            <img src="TestFlight.webp" alt="TestFlight" class="testflight-logo">
+        </p>
+
+        <div class="download-buttons">
+            <a href="https://testflight.apple.com/join/gCBv2SS1" class="testflight-btn">
+                TestFlight Download
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <div class="logo-placeholder">
+        <img src="Logo Lantera.png" alt="Lantera Logo">
+      </div>
+      <div class="footer-brand">
+        <h4>Lantera</h4>
+        <p>© 2025 Lantera. All rights reserved.</p>
+      </div>
+    </div>
+
+    <div class="footer-icons">
+        <!-- Instagram -->
+        <a
+            href="https://www.instagram.com/lantera.app/?hl=en"
+            class="footer-icon"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Email -->
+        <a
+            href="mailto:teamlantera@gmail.com"
+            class="footer-icon"
+            aria-label="Email"
+        >
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- YouTube -->
+        <a
+            href="https://www.youtube.com/@LanteraTeam"
+            class="footer-icon"
+            aria-label="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
